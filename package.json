@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "feel free to modify this field",
   "main": "app.js",
+  "type": "module",
   "dependencies": {
     "jest": "29.1.2"
   },
   "scripts": {
     "start": "node app.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "author": "",
   "license": "ISC"
